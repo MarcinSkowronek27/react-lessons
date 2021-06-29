@@ -29,9 +29,9 @@ class List extends React.Component {
           {ReactHtmlParser(this.props.description)}
         </div>
         <div className={styles.columns}>
-          <Column titleCol={'Animals'} />
-          <Column titleCol={'Plants'} />
-          <Column titleCol={'Minerals'} />
+          {this.state.columns.map(({ key, ...columnProps }) => (
+            <Column key={key} {...columnProps} />
+          ))}
         </div>
       </section>
     )
