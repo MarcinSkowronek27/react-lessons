@@ -10,12 +10,15 @@ class List extends React.Component {
   state = {
     columns: this.props.columns || [],
   }
+
   static propTypes = {
     title: PropTypes.node.isRequired,
+    titleColumn: PropTypes.node.isRequired,
     description: PropTypes.node,
     columns: PropTypes.array,
     image: PropTypes.node,
   }
+  
   static defaultProps = {
     description: settings.defaultListDescription,
   }
