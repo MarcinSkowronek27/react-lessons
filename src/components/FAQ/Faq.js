@@ -3,10 +3,10 @@ import Container from '../Container/Container';
 import Hero from '../Hero/Hero';
 import PropTypes from 'prop-types';
 
-const Faq = props => (
+const Faq = () => (
   <Container>
-    <Hero image={props.image}/>
-    <h2>FAQ</h2>
+    <Hero titleText= 'FAQ' image={'https://images.unsplash.com/photo-1625748542965-8ae95d9d2b79?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'}/>
+    {/* <h2>FAQ</h2> */}
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Ut enim ad minim veniam, quis nostrud exercitation ullamco

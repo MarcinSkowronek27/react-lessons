@@ -1,9 +1,12 @@
 import React from 'react';
 import Container from '../Container/Container';
+import Hero from '../Hero/Hero';
+import PropTypes from 'prop-types';
 
 const Info = () => (
   <Container>
-    <h2>Info</h2>
+    <Hero titleText='Info' image={'https://images.unsplash.com/photo-1625682734260-40d190fb4648?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'} />
+    {/* <h2>Info</h2> */}
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -13,5 +16,9 @@ const Info = () => (
       sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </Container>
 );
+
+Info.propTypes = {
+  image: PropTypes.node,
+};
 
 export default Info;
