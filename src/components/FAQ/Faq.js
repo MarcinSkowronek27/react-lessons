@@ -1,10 +1,11 @@
 import React from 'react';
 import Container from '../Container/Container';
 import Hero from '../Hero/Hero';
+import PropTypes from 'prop-types';
 
-const Faq = () => (
+const Faq = props => (
   <Container>
-    <Hero />
+    <Hero image={props.image}/>
     <h2>FAQ</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -15,5 +16,9 @@ const Faq = () => (
       sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </Container>
 );
+
+Faq.propTypes = {
+  image: PropTypes.node,
+};
 
 export default Faq;

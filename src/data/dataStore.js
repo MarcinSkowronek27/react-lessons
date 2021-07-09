@@ -10,6 +10,7 @@ export const settings = {
     defaultText: 'Search...',
     icon: 'search',
   },
+  logo: 'frog',
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
 };
@@ -142,7 +143,7 @@ const cards = [
 ];
 
 const initialStoreData = {
-  app: {...pageContents},
+  app: { ...pageContents },
   lists: [...lists],
   columns: [...columns],
   cards: [...cards],
