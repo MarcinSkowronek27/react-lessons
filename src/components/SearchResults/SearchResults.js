@@ -20,7 +20,7 @@ class SearchResults extends React.Component {
           <span className={styles.icon}>
             <Icon name='cat' />
           </span>
-          TITLE
+          TITLES
         </h3>
         {cards.map(cardData => (
           <Card key={cardData.id} {...cardData} />
